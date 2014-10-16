@@ -1,0 +1,158 @@
+.header, .main, .footer{
+	width: 100%;
+	text-align: center;
+	font-family: 微软雅黑, Arial;
+}
+
+.middle{
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+html, body, ul, h1{
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover, a:visited{
+	color: #444;
+	text-decoration: none;
+}
+
+.header{
+	text-align: left;
+	padding-top: 1px;
+	height: 75px;
+}
+
+.logo{
+	width: 243px;
+	color: #474e5d;
+}
+
+.logo .left{
+	font-size: 50px;
+	font-family: 'Monoton', cursive;
+	/*font-family: 'Allerta Stencil', sans-serif;*/
+}
+
+.logo .right{
+	float: right;
+	margin-top: -61px;
+}
+
+.logo .right .up{
+	font-size: 14px;
+	height: 20px;
+}
+
+.logo .right .down{
+	font-size: 19px;
+}
+
+.main{
+	position: relative;
+	/*background: #fafafa;*/
+}
+
+.main .middle{
+	background: #fafafa;
+}
+
+.banner-bg{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 160px;
+	/*background: url(../img/banner-bg.png);*/
+}
+
+.banner{
+	color: #FFF;
+	height: 146px;
+	/*background: url(../img/banner-bg.png);*/
+	background: #42acca url(../img/bbg3.png);
+	background-size: 100% auto;
+	background-position-y: 0px;
+}
+
+.banner h1{
+	font-size: 27px;
+	padding-top: 13px;
+	font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体";
+	text-shadow: rgba(0,0,0,0.8) 0px 1px 3px
+}
+
+.banner ul.products{
+	margin-top: 25px;
+}
+
+.banner ul.products li{
+	display: inline-block;
+	margin: 0 14px;
+	font-size: 12px;
+	text-shadow: rgba(0,0,0,0.7) 0px 1px 1px;
+}
+
+.banner ul.products li .icon{
+	margin-bottom: 4px;
+}
+
+.category{
+	margin-top: 30px;
+	height: 290px;
+}
+
+.category .entry{
+	display: inline-block;
+	width: 150px;
+	margin: 0 50px;
+	vertical-align:top;
+}
+
+.category .entry ul{
+	text-align: left;
+	margin: 15px 0 0 37px;
+	font-size: 12px;
+	/*list-style: none;*/
+}
+
+.category .entry ul li{
+	margin: 10px 0;
+}
+
+.category .entry ul li a:hover{
+	text-decoration: underline;
+	color: #616161;	
+}
+
+.category .type{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 19px;
+	margin-top: 10px;
+	text-indent: -10px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体";
+	text-shadow: rgba(0,0,0,0.2) 0px 1px 1px;
+}
+
+.category .type-1{
+	border-left: #f2d77b 5px solid;
+}
+
+.category .type-2{
+	border-left: #f3787a 5px solid;
+}
+
+.category .type-3{
+	border-left: #39dcc8 5px solid;
+}
+
+.footer{
+	padding: 10px 0 5px;
+	color: rgb(151, 151, 151);
+	font-size: 12px
+}

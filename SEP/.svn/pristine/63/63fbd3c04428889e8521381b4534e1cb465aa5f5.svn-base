@@ -1,0 +1,75 @@
+#directionWrapper{
+    padding:15px 7px;
+    width:234px;
+    border:1px solid #CCC;
+    margin: 10px;
+    float:left;
+}
+
+#directionContainer{
+    max-height: 600px;
+    overflow: auto;
+}
+
+#directionContainer ul{
+    margin:0px;
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+}
+
+#directionContainer ul div{
+    height: 12px;
+    line-height: 12px;
+}
+
+.directionTitle{
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom:3px;
+    border-bottom: 1px dashed #ccc;
+}
+.sectionItem{
+    height:20px;
+    padding: 4px;
+}
+.sectionItem span{
+    *zoom:1;
+    display:inline-block;
+}
+.itemTitle{
+    _float:left;
+}
+
+.fixTop{
+    position: fixed;
+}
+
+.op{
+    text-align: center;
+}
+
+.publish_btn, .updateDir_btn{
+    background: #69a539;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0px 20px;
+    display: inline-block;
+    margin: 30px 10px;
+    text-align: center;
+}
+
+.updateDir_btn{
+    background: #DDD;
+    color: #333;
+}
+
+.publish_btn:hover{
+    background: #7bb64c;
+}
+
+.updateDir_btn:hover{
+    background: #EEE;
+}
+}

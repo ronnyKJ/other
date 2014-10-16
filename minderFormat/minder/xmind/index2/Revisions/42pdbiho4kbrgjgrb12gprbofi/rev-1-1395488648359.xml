@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xmap-revision-content xmlns="urn:xmind:xmap:xmlns:revision:1.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <sheet xmlns="urn:xmind:xmap:xmlns:content:2.0" id="42pdbiho4kbrgjgrb12gprbofi" timestamp="1395488633390">
+    <topic id="4abe447rd2h8cfhbnhlf3vob62" structure-class="org.xmind.ui.map.clockwise" timestamp="1395488633390">
+      <title>中心主题</title>
+      <children>
+        <topics type="attached">
+          <topic id="5uafmdea5dm67r7cnslv5tcju5" timestamp="1395488633380">
+            <title>分支主题 1</title>
+          </topic>
+        </topics>
+      </children>
+    </topic>
+    <title>画布 1</title>
+  </sheet>
+</xmap-revision-content>

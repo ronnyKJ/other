@@ -1,0 +1,133 @@
+.banner-bg.menu{
+	height: 40px;
+}
+
+ul.menu{
+	height: 40px;
+	margin-left: 75px;
+	list-style: none;
+}
+
+ul.menu li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	margin: 0 30px;
+}
+
+ul.menu li a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+ul.menu li ul.sub{
+	display: none;
+	background: #f1f1f1;
+	overflow: auto;
+	position: absolute;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+ul.menu li ul.sub li{
+	display: block;
+	float: none;
+	margin: 5px 18px;
+	height: 20px;
+	line-height: 20px;
+}
+
+ul.menu li ul.sub a{
+	color: #333;
+	font-size: 12px;
+}
+
+ul.menu li:hover ul.sub{
+	display: block;
+}
+
+.nav{
+	position: absolute;
+	left: -110px;
+	top: 60px;
+	width: 180px;
+	max-height: 600px;
+	background: #f4f4f4;
+	text-align: left;
+	border: #e2e2e2 1px solid;
+	padding: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+	overflow: auto;
+}
+
+.nav a{
+	color: #333;
+}
+
+.nav ul{
+	margin: 0 10px;
+}
+
+.nav ul div{
+	height: 12px;
+	line-height: 12px;
+}
+
+.content{
+	text-align: left;
+	padding: 30px 0;
+	margin-left: 120px;
+}
+
+a.create_btn{
+	background: #69a539;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	margin: 0px 20px;
+	display: inline-block;
+}
+
+a.create_btn:hover{
+	background: #7bb64c;
+}
+
+.edit_btn{
+	position: absolute;
+	right: 0px;
+	top: 60px;
+	background: #69a539;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 8px 18px;
+}
+
+.edit_btn:hover{
+	background: #7bb64c;
+}
+
+.mask{
+	position: fixed;
+	background: rgba(255,255,255,0.7);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.loading{
+	width: 160px;
+	height: 60px;
+	background: #EEE;
+	line-height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -30px -80px;
+	text-align: center;
+}

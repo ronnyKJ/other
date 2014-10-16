@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<?php
+    require_once('config.php');
+?>
+<html>
+<head>
+    <title>SEP</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <script type="text/javascript" charset="utf-8" src="ueditor/third-party/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="middle">
+        <div class="logo">
+             <div class="left">SEP</div>
+             <div class="right">
+                <div class="up">提供最好的策略服务</div>
+                <div class="down">攻坚  复用 前瞻</div>
+             </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="banner-bg menu"></div>
+    <div class="middle">
+        <ul class="menu">
+            <li><a href="<?=dirname($_SERVER["PHP_SELF"]);?>">首页</a></li>
+            <?php foreach ($category as $key => $type) { ?>
+            <li>
+                <a href="javascript:;"><?=$key?></a>
+                <ul class="sub">
+                    <?php foreach ($type as $item => $file) { ?>
+                    <li><a href="content.php?file=<?=$file?>"><?=$item?></a></li>
+                    <?php } ?>
+                </ul>
+            </li>
+            <?php } ?>
+        </ul>
+        
+        <?php
+            $file = dirname(__FILE__).'/'.'content/'.$_GET['file'];
+            $dirPath = substr($file, 0, strlen($file) - 5) . '.dir.html';
+
+            if(!empty($_GET['file']) && file_exists($dirPath)){
+                echo '<div id="nav" class="nav">' . file_get_contents($dirPath) . '</div>';
+            }
+        ?>
+        
+        <div class="content">
+            <?php
+                if(empty($_GET['file'])){
+                    echo '请检查文件路径的参数';
+                }else{
+                    if(file_exists($file)){
+                        echo file_get_contents($file);
+                        echo '<a class="edit_btn" target="_blank" href="editor.php?file='.$_GET['file'].'">编辑</a>';
+                    }else{
+                        echo '<a class="create_btn" target="_blank" href="editor.php?file='.$_GET['file'].'">创建文档</a>';
+                    }
+                }
+            ?>
+        </div>
+    </div>
+</div>
+<div class="footer">百度版权所有</div>
+</body>
+<script>
+    var addStyleSheets = function(className, style){
+        var tmp = document.styleSheets;
+        var c = tmp[tmp.length - 1];
+        c.insertRule(className + " { "+style+" }", c.cssRules.length);
+    };
+    // 页面网上滚动时，让目录固定在顶部
+    var $nav = $('.nav');
+    var left = $('.middle').offset().left - 110;
+    addStyleSheets('.nav-fixTop', 'position:fixed;top:10px;left:' + left + 'px;')
+    $(window).scroll(function(e) {
+        if($('.content').offset().top < (document.body.scrollTop||document.documentElement.scrollTop)){
+            $nav.addClass('nav-fixTop');
+        } else {
+            $nav.removeClass('nav-fixTop');
+        }
+    });
+</script>
+</html>

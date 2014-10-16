@@ -1,0 +1,68 @@
+.show h1{
+    font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体";
+}
+
+.show h2{
+    border-left: #f3787a 5px solid;
+    padding-left: 20px;
+}
+
+.form{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.form .item label{
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    margin: 10px 0;
+}
+
+.form .item input{
+    width: 250px;
+    height: 25px;
+}
+
+.form .submit{
+    background: #69a539;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.form .submit.sys1{
+    margin: 30px 0 0 80px;
+}
+
+.form .reset{
+    background: #DDD;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 15px 0 80px;
+}
+
+.form .submit:hover{
+    background: #7bb64c;
+}
+
+.output{
+    margin-left: 30px;
+}
+
+.output .item{
+    margin: 10px 0;
+}
+
+.output .item .score{
+    font-size: 30px;
+}

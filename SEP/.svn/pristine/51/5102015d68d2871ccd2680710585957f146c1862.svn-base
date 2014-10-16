@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<?php
+    require_once('config.php');
+?>
+<html>
+<head>
+    <title>SEP</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+    <div class="middle">
+        <div class="logo">
+             <div class="left">SEP</div>
+             <div class="right">
+                <div class="up">提供最好的策略服务</div>
+                <div class="down">攻坚  复用 前瞻</div>
+             </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="banner-bg"></div>
+    <div class="middle">
+        <div class="banner">
+            <h1 class="txt">立足CBG，服务全公司</h2>
+            <ul class="products">
+                <li>
+                    <div class="icon"><img src="img/tieba.png" /></div>
+                    <span class="name">贴吧</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/wenku.png" /></div>
+                    <span class="name">文库</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/yuedu.png" /></div>
+                    <span class="name">阅读</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/zhidao.png" /></div>
+                    <span class="name">知道</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/baike.png" /></div>
+                    <span class="name">百科</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/xiaofeijuece.png" /></div>
+                    <span class="name">消费决策</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/pass.png" /></div>
+                    <span class="name">PASS</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/xiangce.png" /></div>
+                    <span class="name">相册</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/sousuo.png" /></div>
+                    <span class="name">大搜索</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/wise.png" /></div>
+                    <span class="name">WISE</span>
+                </li>
+                <li>
+                    <div class="icon"><img src="img/more.png" /></div>
+                    <span class="name">敬请期待...</span>
+                </li>
+            </ul>
+        </div>
+        <div class="category">
+            <?php $i = 0;?>
+            <?php foreach ($category as $key => $type) { ?>
+            <?php $i++;?>
+            <div class="entry">
+                <div class="icon"><img src="img/icon-<?=$i?>.png" /></div>
+		<div class="type type-<?=$i?>"><?=$key?></div>
+                <ul>
+		    <?php foreach ($type as $item => $file) { ?>
+		    <?php if($i==3){ ?>
+			<li><a href="/sepdemo/<?=$file?>"><?=$item?></a></li>
+		    <?php } else { ?>
+		    <li><a href="content.php?file=<?=$file?>"><?=$item?></a></li>
+		    <?php } ?>
+                    <?php } ?>
+                </ul>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+<div class="footer">百度版权所有</div>
+</body>
+</html>
